@@ -1,14 +1,31 @@
 * {
 	margin: 0;
-	padding: 0;   
+	padding: 0;
 }
 body {
     background: url('bg-12col.png') center repeat-y;
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-h3{
+header {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 20px;
+	height: 300px;
+}
+
+header div {
+	clear: both;
+}
+
+
+h2{
   color:#444444;      
+}
+
+h3{
+   color:#444444;  
+    padding-top:40px;
 }
 
 h4{
@@ -19,22 +36,16 @@ p{
   color:#515151;
 }
 
-header {
-	width: 940px;
-	margin: 0 auto;
-	padding: 0 20px;	
-	height: 300px;
-}
-
-header div {
-	clear: both;
-}
-
 #logo {
 	float: left;
 	margin-top: 50px;
 	margin-right: 10px;
 	width: 140px;
+}
+
+#header-widget-area {
+  float: right;
+  width: 140px;
 }
 
 #search-button {
@@ -48,6 +59,9 @@ header div {
 	margin: 0 auto;
 	padding: 0 20px;
 	border-bottom: 2px dotted black;
+  clear: both;
+
+
 }
 
 .slider {
@@ -58,38 +72,32 @@ header div {
   content: "";
   display: block;
   clear: both;
-    
 }
 
 #footer::after {
   content: "";
-  display: block;      
+  display: block;
   clear: both;
 }
 
 #footer {
 	width: 940px;
 	margin: 0 auto;
-	padding: 0 20px;    
-    color:white;  
+	padding: 0 20px;
 }
 
 #footer p {
 	clear: both;
-    color:white;
 }
-
 
 #left {
 	float: left;
-	width: 485px;
-    padding-left:20px;
+	max-width: 485px;
 }
 
 #right {
 	float: right;
 	width: 220px;
-    padding-right: 20px;
 }
 
 .square {
@@ -108,7 +116,6 @@ header div {
 
 #content h2 {
     text-align: center;
-    
 }
 
 #last {
@@ -123,24 +130,27 @@ header div {
 #nav-left:after {
     content: '';
     display: inline-block;
+
 	margin-left: 400px;
 }
 
+
 #nav-left {
-  /*float: right;*/
+  float: right;
   text-align: justify;
   max-width: 100%;
-  overflow: hidden;/* prevents the great collapse */
+  overflow: hidden;
   padding: 10px 0;
   margin-left: 50px;
   margin-right: 135px;
   position: absolute;
   margin-top: 195px;
 
-
-
-/* overwrites existing margins */
 }
+
+
+
+
 
 ul {
     margin: 0;
@@ -150,7 +160,7 @@ ul {
 
 li {
     display: inline-block;
-}
+} 
 
 
 /*#logo {
@@ -158,8 +168,8 @@ li {
   left: 50%;
   margin: -48px 0px 0px -108px;
   -top: 90px;
-}
-*/
+}*/
+
 .left-content {
     float: left;
     width: 520px;
@@ -179,7 +189,6 @@ li {
     margin-top: 35px;
 }
 
-
 .partners{
     max-width: 200px;
 }
@@ -188,18 +197,22 @@ li {
     max-width: 60px;
 }
 
-
-.footertop{ 
+.footertop{
     clear:both;
     text-align: center;
     line-height: 800%; 
     display: block;
-    border-top: 2px dotted black;    
+   
+    text-align: center;
+    line-height: 800%;
+
 }
 
-
 .footerbottom{
-    text-align: center;    
+    text-align: center;
+    
+
+
 }
 
 div.footerdown{
@@ -208,18 +221,22 @@ div.footerdown{
 }
 
 .mainadopt{    
-    width: 940px;
-	margin: 0 auto;
-	padding: 0 20px;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+border: solid 1px #B2B2B2;
+    overflow: hidden;
 }
 
 .adopttop{
     clear: both;
     display: block; 
     text-align: center;
-    line-height: 200%;   
+    line-height: 150%;   
     padding-bottom: 30px; 
+    border-bottom: dotted 1px #B2B2B2;
     
+   
 }
 
 .adoptpic{  
@@ -239,7 +256,7 @@ div.footerdown{
 
 .adoptcatword{
     float:left;    
-    max-width: 30%;
+    max-width: 35%;
     line-height: 200%;
     text-align: center;
     display: inline;
@@ -250,7 +267,7 @@ div.footerdown{
 
 .adoptword{
     float:right;  
-    max-width: 30%;
+    max-width: 35%;
     line-height: 200%;
     text-align: center;
     display: inline;
@@ -263,13 +280,15 @@ div.footerdown{
 }
 
 .catsection{
-    clear:both;     
+  clear:both;
+  border-top: dotted 1px #B2B2B2;  
 }
 
 img.adopttoppic{  
     padding-top: 20px;
     max-width: 300px;
     max-height: 250px;
+ 
 }
 
 img.adoptdog{
@@ -277,14 +296,51 @@ img.adoptdog{
     max-height: 250px;
 }
 
-button.buttonclick {
+button.buttonclick1 {
     position: relative;
-    width: 220px;
-    height: 60px;
+    width: 311px;
+    height: 43px;
     border: 1px;
     text-align:center;   
     font-size:15px;
     background-color: #A36E86;
     color:white;      
+}
+
+button.buttonclick2 {
+    position: relative;
+    width: 311px;
+    height: 43px;
+    border: 1px;
+    text-align:center;   
+    font-size:15px;
+    background-color: #A36E86;
+    color:white;      
+}
+
+.button1{
+    padding:50px;
+}
+
+img.donatetoppic{  
+    padding-top: 20px;
+    max-width: 300px;
+    max-height: 550px;
+}
+
+.donatetop{
+    clear: both;
+    display: block; 
+    text-align: center;
+    line-height:40px; 
+    padding-bottom: 40px; 
    
+}
+
+.donatemiddle{
+  width: 940px;
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 18px;
+    border-top: dotted 1px #B2B2B2;   
 }
